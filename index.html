@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8"
+    </head>
+    <body>
+        <section class="sidebar">
+            <h1 id="heading">Velkommen</h1>
+            <p id="text1"></p>
+            <ul id="adjList" class="hide">
+                
+            </ul>
+        </section>
+
+        <div id="inputArea1" class="show">
+            <div id="start">
+                <h2>Velkommen!</h2>
+                <form method="post" action="">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <label for="name">Fyll inn navnet ditt:</br></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="kjonn">Ditt kjønn:</label>
+                                <input type="radio" name="kjonn" id="kjonn" value="mann"> <h5>Mann</h5>
+                                <input type="radio" name="kjonn" id="kjonn" value="kvinne"> <h5>Kvinne</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="feedback"></div>
+                            </td>
+                            <td>
+                                <button type="button" id="btn">OK</button>
+                            </td>
+                    </table>
+
+         
+                </form>
+            </div>
+        </div>
+
+        <div id="inputArea2" class="hide">
+            <div id="side2">
+                <h2>Fantastisk!</h2>
+                <span>Nå skal vi ha en liten adjektivsfortelling</span>
+                <div id="counter">0</div>
+                <span>Velg <u>6</u> adjektiv:</span>
+                <ul>
+                    <li>flott</li>
+                    <li>fantastisk</li>
+                    <li>megasexy</li>
+                    <li>smakløs</li>
+                    <li>himmelske</li>
+                    <li>bamsete</li>
+                    <li>tullete</li>
+                    <li>grusom</li>
+                    <li>teit</li>
+                    <li>bæsjete</li>
+                    <li>pompøs</li>
+                    <li>kultivert</li>
+                    <li>dyrisk</li>
+                    <li>snill</li>
+                    <li>dvask</li>
+                    <li>innbilsk</li>
+                    <li>illeluktende</li>
+                    <li>humoristisk</li>
+                </ul>
+                    <button type="button" id="add">Legg til</button>
+            </div>
+        </div>
+
+        <div id="inputArea3" class="hide">
+            <h1>Din adjektivsfortelling:</h1>
+            <p id="historie"></p>
+            <button type="button" id="back">Gå tilbake</button>
+        </div>
+
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="script.js"></script>
+        <script src="script2.js"></script>
+        
+    </body>
+</html>
